@@ -61,11 +61,6 @@ function makeDrops(){
     }
 
 
-
-
-
-
-
 	function animate(){
       ctx.save(); ctx2.save();
 		ctx.clearRect(0, 0, cW, cH);
@@ -73,12 +68,14 @@ function makeDrops(){
 		ctx.drawImage(bg,0,0, 700, 400);
 		ctx.rotate(-.6);
 		makeRain();
-
         makeDrops();
-        // setTimeout(makeDrops,7000);
 		ctx.restore(); ctx2.restore();
 	}
 
+window.addEventListener('load', function(event) {
+setInterval(animate, 50);
+  });
 
-	var animateInterval = setInterval(animate, 50);
+
+//	var animateInterval = setInterval(animate, 50);
 
