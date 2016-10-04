@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{ margin:10px; background:gray; }
+#my_canvas{position: absolute; background: #036; border:#000 1px solid;  opacity: 0.5; }
+#my_canvas2{position: absolute; background: #000; border:#000 1px solid;}
+#audioDiv{
+position: relative; opacity: 0.5;
+}
+</style>
+</head>
+<body>
+<div>
+<canvas id="my_canvas2" width="700" height="400"></canvas>
+<canvas id="my_canvas" width="700" height="400"></canvas>
+<h1 id="status"></h1>
+</div>
+<div id="audioDiv">
+<audio controls loop>
+  <source src="Raindrops.mp3" type="audio/mpeg">
+</audio>
+</div>
+<script src="rain.js"></script>
+
+</body>
+</html>
