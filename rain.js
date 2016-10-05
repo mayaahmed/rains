@@ -1,3 +1,10 @@
+var overlay = document.getElementById("preloaderOverlay");
+window.addEventListener("load", function(){
+    overlay.style.display="none";
+
+  })
+
+
 
 var bg = new Image();
 bg.src = "rain.jpg";
@@ -77,5 +84,4 @@ setInterval(animate, 50);
   });
 
 
-//	var animateInterval = setInterval(animate, 50);
 
